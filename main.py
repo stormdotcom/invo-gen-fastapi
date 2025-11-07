@@ -6,7 +6,7 @@ from docx2pdf import convert
 from num2words import num2words
 import tempfile, math, os
 
-app = FastAPI(title="A S Electricals Invoice Generator")
+app = FastAPI(title="Invo GEN API")
 
 class InvoiceData(BaseModel):
     customer_name: str
@@ -65,4 +65,4 @@ async def generate_invoice(data: InvoiceData):
 
 @app.get("/")
 def index():
-    return {"message": "A S Electricals Invoice API running with uv"}
+    return {"message": "Invo Gen API running with uv"}
