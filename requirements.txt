@@ -3,4 +3,3 @@ uvicorn
 python-docx
 docx2pdf
 num2words
-pydantic
